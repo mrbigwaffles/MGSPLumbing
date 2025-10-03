@@ -1,10 +1,13 @@
 ---
-title: Pipedream Pros Plumbing Gas
-emoji: 😻
-colorFrom: yellow
-colorTo: gray
+title: PipeDream Pros Plumbing & Gas 🚰
+colorFrom: red
+colorTo: yellow
+emoji: 🐳
 sdk: static
 pinned: false
+tags:
+  - deepsite-v3
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+# Welcome to your new DeepSite project!
+This project was created with [DeepSite](https://deepsite.hf.co).

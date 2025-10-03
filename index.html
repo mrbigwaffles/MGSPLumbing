@@ -1,19 +1,522 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGS Plumbing and Gas - Burnley</title>
+    <link rel="icon" type="image/x-icon" href="https://static.photos/blue/200x200/42">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6cb0',
+                        secondary: '#4299e1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="https://static.photos/blue/200x200/42" alt="Logo" class="h-10 w-10 rounded-full mr-2">
+                            <span class="font-semibold text-primary text-lg">MGS Plumbing & Gas</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#" class="py-4 px-2 text-primary border-b-4 border-primary font-semibold">Home</a>
+                    <a href="#services" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Services</a>
+                    <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">About</a>
+                    <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6 text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="#" class="block text-sm px-2 py-4 text-white bg-primary font-semibold">Home</a></li>
+                <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-secondary transition duration-300">Services</a></li>
+                <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-secondary transition duration-300">About</a></li>
+                <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-secondary transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-primary text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-primary sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <div class="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+                    <div class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                        <div class="sm:text-center lg:text-left">
+                            <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
+                                <span class="block">Reliable Plumbing</span>
+                                <span class="block text-secondary">& Gas Services</span>
+                            </h1>
+                            <p class="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                                10 years of trusted plumbing and gas services in Burnley and surrounding areas.
+                            </p>
+                            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                <div class="rounded-md shadow">
+                                    <a href="#contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-100 md:py-4 md:text-lg md:px-10">
+                                        Get a Quote
+                                    </a>
+                                </div>
+                                <div class="mt-3 sm:mt-0 sm:ml-3">
+                                    <a href="#services" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-secondary hover:bg-opacity-80 md:py-4 md:text-lg md:px-10">
+                                        Our Services
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://static.photos/plumbing/1200x630/1" alt="Plumber working">
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Services</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Expert Plumbing & Gas Solutions
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Comprehensive services tailored to your needs
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Central Heating -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
+                                        <i data-feather="thermometer" class="h-6 w-6 text-white"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Central Heating</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Accredited installer of central heating and gas work for new installations and existing system repairs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plumbing -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
+                                        <i data-feather="droplet" class="h-6 w-6 text-white"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Plumbing</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Any project large or small from a leaking tap and general plumbing to water mains pipe repairs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kitchens & Bathrooms -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
+                                        <i data-feather="home" class="h-6 w-6 text-white"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Kitchens & Bathrooms</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Design and installation of quality, bespoke kitchens built to suit your specific requirements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tiling -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
+                                        <i data-feather="grid" class="h-6 w-6 text-white"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Tiling</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Years of experience allow me to create a flawless finish for any tiling project in bathrooms or kitchens.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">About</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    MGS Plumbing and Gas
+                </p>
+            </div>
+
+            <div class="mt-10 flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                    <img class="rounded-lg shadow-xl" src="https://static.photos/plumbing/640x360/2" alt="Mustafa Sahin working">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-900">Mustafa Sahin</h3>
+                    <p class="mt-2 text-lg text-gray-500">
+                        Based in Burnley with 10 years' experience in plumbing and gas work.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        I cover a wide range of services in heating and plumbing and the installation of quality, bespoke bathrooms and kitchens.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        I take great pride in my work and complete all my jobs to the highest standard with good time keeping so give me a call if you would like a reliable, local expert.
+                    </p>
+                    <div class="mt-6">
+                        <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-secondary">
+                            Contact Me
+                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base font-semibold tracking-wide uppercase">Client Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+                    What Our Clients Say
+                </p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://static.photos/people/200x200/1" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <div class="text-lg font-medium">Sarah Johnson</div>
+                            <div class="text-secondary-200">Burnley</div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-200">
+                            "Mustafa installed our new bathroom and did an excellent job. His attention to detail was impressive and he completed the work on time and on budget."
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://static.photos/people/200x200/2" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <div class="text-lg font-medium">David Thompson</div>
+                            <div class="text-secondary-200">Pendle</div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-200">
+                            "Quick response to our emergency plumbing issue. Professional service with fair pricing. Will definitely use MGS Plumbing again."
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://static.photos/people/200x200/3" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <div class="text-lg font-medium">Emma Wilson</div>
+                            <div class="text-secondary-200">Blackburn</div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-200">
+                            "The new central heating system works perfectly. Mustafa explained everything clearly and left the house spotless after installation."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Contact</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Get in Touch
+                </p>
+            </div>
+            <div class="mt-10 flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-medium text-gray-900">Contact Information</h3>
+                        <div class="mt-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i data-feather="phone" class="h-6 w-6 text-primary"></i>
+                                </div>
+                                <div class="ml-3 text-base text-gray-500">
+                                    <p>+44 7784 083163</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i data-feather="mail" class="h-6 w-6 text-primary"></i>
+                                </div>
+                                <div class="ml-3 text-base text-gray-500">
+                                    <p>mgsahin@btinternet.com</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i data-feather="map-pin" class="h-6 w-6 text-primary"></i>
+                                </div>
+                                <div class="ml-3 text-base text-gray-500">
+                                    <p>Serving Burnley and surrounding areas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="text-lg font-medium text-gray-900">Business Hours</h4>
+                            <div class="mt-4 space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Monday - Friday</span>
+                                    <span class="text-gray-900 font-medium">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Saturday</span>
+                                    <span class="text-gray-900 font-medium">9:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Sunday</span>
+                                    <span class="text-gray-900 font-medium">Emergency Only</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                            <input type="text" name="phone" id="phone" autocomplete="tel" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700">Service Needed</label>
+                            <select id="service" name="service" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md">
+                                <option>Central Heating</option>
+                                <option>Plumbing</option>
+                                <option>Kitchen Installation</option>
+                                <option>Bathroom Installation</option>
+                                <option>Tiling</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex items-center">
+                        <img src="https://static.photos/blue/200x200/42" alt="Logo" class="h-10 w-10 rounded-full">
+                        <span class="ml-3 text-white text-xl font-semibold">MGS Plumbing & Gas</span>
+                    </div>
+                    <p class="text-gray-300 text-base">
+                        Providing quality plumbing and gas services to Burnley and surrounding areas for over 10 years.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="twitter" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="instagram" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Services
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Central Heating
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Plumbing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Kitchens & Bathrooms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Tiling
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Company
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#about" class="text-base text-gray-400 hover:text-white">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="text-base text-gray-400 hover:text-white">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Testimonials
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Legal
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Terms of Service
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 MGS Plumbing and Gas. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
 </html>
