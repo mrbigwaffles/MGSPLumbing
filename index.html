@@ -3,508 +3,466 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MGS Plumbing and Gas - Burnley</title>
-    <link rel="icon" type="image/x-icon" href="https://static.photos/blue/200x200/42">
+    <title>Eve Kay - Award-Winning TV Producer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2b6cb0',
-                        secondary: '#4299e1',
-                    }
-                }
-            }
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
         }
-    </script>
+        .hero-pattern {
+            background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.7) 100%);
+        }
+        .award-icon {
+            filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <div>
-                        <a href="#" class="flex items-center py-4 px-2">
-                            <img src="https://static.photos/blue/200x200/42" alt="Logo" class="h-10 w-10 rounded-full mr-2">
-                            <span class="font-semibold text-primary text-lg">MGS Plumbing & Gas</span>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Animated Background -->
+    <div id="vanta-bg" class="fixed top-0 left-0 w-full h-full z-0"></div>
+
+    <!-- Main Content -->
+    <div class="relative z-10">
+        <!-- Header -->
+        <header class="py-8 px-6 md:px-12 lg:px-24">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl md:text-4xl font-bold font-serif">
+                    <span class="text-white">EVE</span>
+                    <span class="text-amber-400">KAY</span>
+                </h1>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#about" class="hover:text-amber-400 transition duration-300">About</a></li>
+                        <li><a href="#work" class="hover:text-amber-400 transition duration-300">Work</a></li>
+                        <li><a href="#awards" class="hover:text-amber-300 transition duration-300">Awards</a></li>
+                        <li><a href="#contact" class="hover:text-amber-300 transition duration-300">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden">
+                    <i data-feather="menu" class="text-white"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="py-20 px-6 md:px-12 lg:px-24 hero-pattern">
+            <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h2 class="text-4xl md:text-6xl font-bold font-serif mb-6">
+                        <span class="block">Creative Leader</span>
+                        <span class="block text-amber-400">Award-Winning</span>
+                        <span class="block">Executive Producer</span>
+                    </h2>
+                    <p class="text-lg md:text-xl mb-8 leading-relaxed">
+                        25+ years crafting compelling documentaries and factual entertainment for major international broadcasters.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#work" class="bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-full transition duration-300">
+                            View Work
+                        </a>
+                        <a href="#contact" class="border border-amber-400 hover:bg-amber-400 hover:text-black text-amber-400 font-bold py-3 px-6 rounded-full transition duration-300">
+                            Get In Touch
                         </a>
                     </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="#" class="py-4 px-2 text-primary border-b-4 border-primary font-semibold">Home</a>
-                    <a href="#services" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Services</a>
-                    <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">About</a>
-                    <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Contact</a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="outline-none mobile-menu-button">
-                        <i data-feather="menu" class="w-6 h-6 text-gray-700"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div class="hidden mobile-menu">
-            <ul class="">
-                <li class="active"><a href="#" class="block text-sm px-2 py-4 text-white bg-primary font-semibold">Home</a></li>
-                <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-secondary transition duration-300">Services</a></li>
-                <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-secondary transition duration-300">About</a></li>
-                <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-secondary transition duration-300">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="relative bg-primary text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto">
-            <div class="relative z-10 pb-8 bg-primary sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                <div class="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
-                    <div class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                        <div class="sm:text-center lg:text-left">
-                            <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
-                                <span class="block">Reliable Plumbing</span>
-                                <span class="block text-secondary">& Gas Services</span>
-                            </h1>
-                            <p class="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                10 years of trusted plumbing and gas services in Burnley and surrounding areas.
-                            </p>
-                            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <div class="rounded-md shadow">
-                                    <a href="#contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-100 md:py-4 md:text-lg md:px-10">
-                                        Get a Quote
-                                    </a>
-                                </div>
-                                <div class="mt-3 sm:mt-0 sm:ml-3">
-                                    <a href="#services" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-secondary hover:bg-opacity-80 md:py-4 md:text-lg md:px-10">
-                                        Our Services
-                                    </a>
-                                </div>
-                            </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full overflow-hidden shadow-2xl">
+                            <img src="http://static.photos/studio/640x360/42" alt="Eve Kay" class="w-full h-full object-cover mix-blend-overlay opacity-90">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-black bg-opacity-80 p-4 rounded-lg shadow-lg border border-amber-400">
+                            <p class="text-sm text-amber-400">Currently Producing:</p>
+                            <p class="font-bold">CNN Originals Series</p>
+                            <p>"Eva Longoria Searching for France"</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://static.photos/plumbing/1200x630/1" alt="Plumber working">
-        </div>
-    </div>
+        </section>
 
-    <!-- Services Section -->
-    <div id="services" class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Services</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Expert Plumbing & Gas Solutions
-                </p>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
-                    Comprehensive services tailored to your needs
-                </p>
-            </div>
-
-            <div class="mt-10">
-                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Central Heating -->
-                    <div class="pt-6">
-                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
-                            <div class="-mt-6">
-                                <div>
-                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                        <i data-feather="thermometer" class="h-6 w-6 text-white"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Central Heating</h3>
-                                <p class="mt-5 text-base text-gray-500">
-                                    Accredited installer of central heating and gas work for new installations and existing system repairs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Plumbing -->
-                    <div class="pt-6">
-                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
-                            <div class="-mt-6">
-                                <div>
-                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                        <i data-feather="droplet" class="h-6 w-6 text-white"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Plumbing</h3>
-                                <p class="mt-5 text-base text-gray-500">
-                                    Any project large or small from a leaking tap and general plumbing to water mains pipe repairs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kitchens & Bathrooms -->
-                    <div class="pt-6">
-                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
-                            <div class="-mt-6">
-                                <div>
-                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                        <i data-feather="home" class="h-6 w-6 text-white"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Kitchens & Bathrooms</h3>
-                                <p class="mt-5 text-base text-gray-500">
-                                    Design and installation of quality, bespoke kitchens built to suit your specific requirements.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tiling -->
-                    <div class="pt-6">
-                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
-                            <div class="-mt-6">
-                                <div>
-                                    <span class="inline-flex items-center justify-center p-3 bg-primary rounded-md shadow-lg">
-                                        <i data-feather="grid" class="h-6 w-6 text-white"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Tiling</h3>
-                                <p class="mt-5 text-base text-gray-500">
-                                    Years of experience allow me to create a flawless finish for any tiling project in bathrooms or kitchens.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div id="about" class="py-12 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">About</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    MGS Plumbing and Gas
-                </p>
-            </div>
-
-            <div class="mt-10 flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
-                    <img class="rounded-lg shadow-xl" src="https://static.photos/plumbing/640x360/2" alt="Mustafa Sahin working">
-                </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-semibold text-gray-900">Mustafa Sahin</h3>
-                    <p class="mt-2 text-lg text-gray-500">
-                        Based in Burnley with 10 years' experience in plumbing and gas work.
-                    </p>
-                    <p class="mt-4 text-gray-600">
-                        I cover a wide range of services in heating and plumbing and the installation of quality, bespoke bathrooms and kitchens.
-                    </p>
-                    <p class="mt-4 text-gray-600">
-                        I take great pride in my work and complete all my jobs to the highest standard with good time keeping so give me a call if you would like a reliable, local expert.
-                    </p>
-                    <div class="mt-6">
-                        <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-secondary">
-                            Contact Me
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Testimonials -->
-    <div class="bg-primary text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base font-semibold tracking-wide uppercase">Client Testimonials</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
-                    What Our Clients Say
-                </p>
-            </div>
-            <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full" src="https://static.photos/people/200x200/1" alt="">
-                        </div>
-                        <div class="ml-4">
-                            <div class="text-lg font-medium">Sarah Johnson</div>
-                            <div class="text-secondary-200">Burnley</div>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <p class="text-gray-200">
-                            "Mustafa installed our new bathroom and did an excellent job. His attention to detail was impressive and he completed the work on time and on budget."
+        <!-- About Section -->
+        <section id="about" class="py-20 px-6 md:px-12 lg:px-24 bg-black bg-opacity-70">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-12 text-center">
+                    <span class="text-white">About</span>
+                    <span class="text-amber-400">Eve</span>
+                </h2>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-6 text-amber-400">Creative Leadership</h3>
+                        <p class="mb-6 leading-relaxed">
+                            An executive producer with 25+ years of experience in factual, documentary, and formatted television, delivering high-profile, award-winning series for major international broadcasters.
+                        </p>
+                        <p class="mb-6 leading-relaxed">
+                            Specializing in initiating compelling projects and steering them through edit to delivery. Works exceptionally well with both established presenters and new talent.
+                        </p>
+                        <p class="leading-relaxed">
+                            Adept at managing both big and small teams, with extensive experience collaborating with commissioning editors in both UK and US markets.
                         </p>
                     </div>
-                </div>
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full" src="https://static.photos/people/200x200/2" alt="">
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-6 text-amber-400">Specialisms</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-amber-400">
+                                <i data-feather="film" class="text-amber-400 mb-2"></i>
+                                <h4 class="font-bold">Documentary Storytelling</h4>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-amber-400">
+                                <i data-feather="globe" class="text-amber-400 mb-2"></i>
+                                <h4 class="font-bold">International Co-Productions</h4>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-amber-400">
+                                <i data-feather="star" class="text-amber-400 mb-2"></i>
+                                <h4 class="font-bold">Talent-Led Series</h4>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-amber-400">
+                                <i data-feather="tv" class="text-amber-400 mb-2"></i>
+                                <h4 class="font-bold">Factual Entertainment</h4>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-amber-400 md:col-span-2">
+                                <i data-feather="users" class="text-amber-400 mb-2"></i>
+                                <h4 class="font-bold">Large-Scale Series Production</h4>
+                            </div>
                         </div>
-                        <div class="ml-4">
-                            <div class="text-lg font-medium">David Thompson</div>
-                            <div class="text-secondary-200">Pendle</div>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <p class="text-gray-200">
-                            "Quick response to our emergency plumbing issue. Professional service with fair pricing. Will definitely use MGS Plumbing again."
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full" src="https://static.photos/people/200x200/3" alt="">
-                        </div>
-                        <div class="ml-4">
-                            <div class="text-lg font-medium">Emma Wilson</div>
-                            <div class="text-secondary-200">Blackburn</div>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <p class="text-gray-200">
-                            "The new central heating system works perfectly. Mustafa explained everything clearly and left the house spotless after installation."
-                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Contact Section -->
-    <div id="contact" class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Contact</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Get in Touch
-                </p>
+        <!-- Work Experience -->
+        <section id="work" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-900 bg-opacity-90">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-12 text-center">
+                    <span class="text-white">Production</span>
+                    <span class="text-amber-400">Portfolio</span>
+                </h2>
+                
+                <!-- Current Productions -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold mb-8 text-amber-400 border-b border-amber-400 pb-2">Current Projects</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="project-card bg-gray-800 rounded-lg overflow-hidden transition duration-500 ease-in-out">
+                            <div class="h-48 bg-cover bg-center" style="background-image: url('http://static.photos/travel/1024x576/1')"></div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-xl font-bold">Eva Longoria Searching for France</h4>
+                                    <span class="bg-amber-400 text-black text-xs px-2 py-1 rounded">2024</span>
+                                </div>
+                                <p class="text-gray-400 mb-4">CNN Originals Series</p>
+                                <p class="text-gray-300">Following Eva Longoria as she explores the rich culture and cuisine of France.</p>
+                                <div class="mt-4 flex items-center text-sm text-amber-400">
+                                    <i data-feather="tv" class="mr-1"></i>
+                                    <span>Dragonfly Film & TV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Productions -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold mb-8 text-amber-400 border-b border-amber-400 pb-2">Recent Productions</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project 1 -->
+                        <div class="project-card bg-gray-800 rounded-lg overflow-hidden transition duration-500 ease-in-out">
+                            <div class="h-48 bg-cover bg-center" style="background-image: url('http://static.photos/food/1024x576/2')"></div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-xl font-bold">Stanley Tucci Searching for Italy</h4>
+                                    <span class="bg-amber-400 text-black text-xs px-2 py-1 rounded">2022</span>
+                                </div>
+                                <p class="text-gray-400 mb-4">CNN Originals Series</p>
+                                <p class="text-gray-300">Stanley Tucci travels across Italy to discover the secrets of Italian cuisine.</p>
+                                <div class="mt-4 flex items-center text-sm text-amber-400">
+                                    <i data-feather="tv" class="mr-1"></i>
+                                    <span>Raw Factual</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="project-card bg-gray-800 rounded-lg overflow-hidden transition duration-500 ease-in-out">
+                            <div class="h-48 bg-cover bg-center" style="background-image: url('http://static.photos/medical/1024x576/3')"></div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-xl font-bold">Super Surgeons: A Chance at Life S2</h4>
+                                    <span class="bg-amber-400 text-black text-xs px-2 py-1 rounded">2024</span>
+                                </div>
+                                <p class="text-gray-400 mb-4">Channel 4</p>
+                                <p class="text-gray-300">Documentary series following groundbreaking surgical teams.</p>
+                                <div class="mt-4 flex items-center text-sm text-amber-400">
+                                    <i data-feather="tv" class="mr-1"></i>
+                                    <span>Wonderhood Studios</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 3 -->
+                        <div class="project-card bg-gray-800 rounded-lg overflow-hidden transition duration-500 ease-in-out">
+                            <div class="h-48 bg-cover bg-center" style="background-image: url('http://static.photos/travel/1024x576/4')"></div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-xl font-bold">Heathrow: Britain's Busiest Airport</h4>
+                                    <span class="bg-amber-400 text-black text-xs px-2 py-1 rounded">2021</span>
+                                </div>
+                                <p class="text-gray-400 mb-4">ITV</p>
+                                <p class="text-gray-300">Behind-the-scenes look at one of the world's busiest airports.</p>
+                                <div class="mt-4 flex items-center text-sm text-amber-400">
+                                    <i data-feather="tv" class="mr-1"></i>
+                                    <span>Raw Factual</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Notable Past Productions -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 text-amber-400 border-b border-amber-400 pb-2">Notable Past Productions</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 hover:border-amber-400 transition duration-300">
+                            <h4 class="font-bold mb-1">Girls on Girls</h4>
+                            <p class="text-gray-400 text-sm mb-2">BBC3</p>
+                            <div class="text-amber-400 text-xs flex items-center">
+                                <i data-feather="award" class="mr-1 w-3 h-3"></i>
+                                <span>Critic's Choice Award</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 hover:border-amber-400 transition duration-300">
+                            <h4 class="font-bold mb-1">The People's History of the NHS</h4>
+                            <p class="text-gray-400 text-sm mb-2">BBC4</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 hover:border-amber-400 transition duration-300">
+                            <h4 class="font-bold mb-1">Obsessive Compulsive Cleaners</h4>
+                            <p class="text-gray-400 text-sm mb-2">C4/TLC</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 hover:border-amber-400 transition duration-300">
+                            <h4 class="font-bold mb-1">Old School with the Hairy Bikers</h4>
+                            <p class="text-gray-400 text-sm mb-2">BBC2</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mt-10 flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-medium text-gray-900">Contact Information</h3>
-                        <div class="mt-6">
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="py-20 px-6 md:px-12 lg:px-24 bg-black bg-opacity-70">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-12 text-center">
+                    <span class="text-white">Awards &</span>
+                    <span class="text-amber-400">Accolades</span>
+                </h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Emmy -->
+                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-lg border border-amber-400 border-opacity-30 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="award-icon mr-4">
+                                <i data-feather="award" class="text-amber-400 w-12 h-12"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Emmy Award</h3>
+                        </div>
+                        <p class="mb-4">Winner - 2×</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-amber-400 mr-2 mt-1 w-4 h-4"></i>
+                                <span>The World's Strictest Parents</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- RTS -->
+                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-lg border border-amber-400 border-opacity-30 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="award-icon mr-4">
+                                <i data-feather="award" class="text-amber-400 w-12 h-12"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">RTS Award</h3>
+                        </div>
+                        <p class="mb-4">Winner - 2×</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-amber-400 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Jamie's Ministry of Food</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Other Awards -->
+                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-lg border border-amber-400 border-opacity-30 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="award-icon mr-4">
+                                <i data-feather="star" class="text-amber-400 w-12 h-12"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Other Honors</h3>
+                        </div>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-amber-400 mr-2 mt-1 w-4 h-4"></i>
+                                <div>
+                                    <p class="font-semibold">Critic's Choice Award</p>
+                                    <p class="text-sm">Girls on Girls</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-amber-400 mr-2 mt-1 w-4 h-4"></i>
+                                <div>
+                                    <p class="font-semibold">Real Screen Award</p>
+                                    <p class="text-sm">My F**ing Tourette's Family</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-amber-400 mr-2 mt-1 w-4 h-4"></i>
+                                <div>
+                                    <p class="font-semibold">PGA Award</p>
+                                    <p class="text-sm">Stanley Tucci Searching for Italy</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-900 bg-opacity-90">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-12 text-center">
+                    <span class="text-white">Get In</span>
+                    <span class="text-amber-400">Touch</span>
+                </h2>
+                
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-6 text-amber-400">Representation</h3>
+                        <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <i data-feather="phone" class="h-6 w-6 text-primary"></i>
+                                <div class="bg-amber-400 bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i data-feather="briefcase" class="text-amber-400"></i>
                                 </div>
-                                <div class="ml-3 text-base text-gray-500">
-                                    <p>+44 7784 083163</p>
-                                </div>
-                            </div>
-                            <div class="mt-4 flex items-start">
-                                <div class="flex-shrink-0">
-                                    <i data-feather="mail" class="h-6 w-6 text-primary"></i>
-                                </div>
-                                <div class="ml-3 text-base text-gray-500">
-                                    <p>mgsahin@btinternet.com</p>
+                                <div>
+                                    <h4 class="font-bold">Dragonfly Film & TV</h4>
+                                    <p class="text-gray-400">Current Production Company</p>
+                                    <p class="text-gray-300">London, UK</p>
                                 </div>
                             </div>
-                            <div class="mt-4 flex items-start">
-                                <div class="flex-shrink-0">
-                                    <i data-feather="map-pin" class="h-6 w-6 text-primary"></i>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-400 bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i data-feather="mail" class="text-amber-400"></i>
                                 </div>
-                                <div class="ml-3 text-base text-gray-500">
-                                    <p>Serving Burnley and surrounding areas</p>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p class="text-gray-300">representation@dragonfly.tv</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mt-8">
-                            <h4 class="text-lg font-medium text-gray-900">Business Hours</h4>
-                            <div class="mt-4 space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Monday - Friday</span>
-                                    <span class="text-gray-900 font-medium">8:00 AM - 6:00 PM</span>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-400 bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i data-feather="linkedin" class="text-amber-400"></i>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Saturday</span>
-                                    <span class="text-gray-900 font-medium">9:00 AM - 4:00 PM</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Sunday</span>
-                                    <span class="text-gray-900 font-medium">Emergency Only</span>
+                                <div>
+                                    <h4 class="font-bold">LinkedIn</h4>
+                                    <p class="text-gray-300">linkedin.com/in/evekay-producer</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="md:w-1/2">
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-6 text-amber-400">Contact Form</h3>
+                        <form class="space-y-6">
                             <div>
-                                <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
+                                <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent" placeholder="John Smith">
                             </div>
                             <div>
-                                <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Your Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent" placeholder="john@example.com">
                             </div>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                            <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                            <input type="text" name="phone" id="phone" autocomplete="tel" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary">
-                        </div>
-                        <div>
-                            <label for="service" class="block text-sm font-medium text-gray-700">Service Needed</label>
-                            <select id="service" name="service" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md">
-                                <option>Central Heating</option>
-                                <option>Plumbing</option>
-                                <option>Kitchen Installation</option>
-                                <option>Bathroom Installation</option>
-                                <option>Tiling</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            <div>
+                                <label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent" placeholder="Production Inquiry">
+                            </div>
+                            <div>
+                                <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent" placeholder="Tell us about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition duration-300">
                                 Send Message
                             </button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 px-6 md:px-12 lg:px-24 bg-black bg-opacity-90">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <h2 class="text-2xl font-bold font-serif">
+                            <span class="text-white">EVE</span>
+                            <span class="text-amber-400">KAY</span>
+                        </h2>
+                        <p class="text-gray-400 mt-2">Award-Winning Executive Producer</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2024 Eve Kay Productions. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-amber-400 text-sm transition duration-300">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-amber-400 text-sm transition duration-300">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-                <div class="space-y-8 xl:col-span-1">
-                    <div class="flex items-center">
-                        <img src="https://static.photos/blue/200x200/42" alt="Logo" class="h-10 w-10 rounded-full">
-                        <span class="ml-3 text-white text-xl font-semibold">MGS Plumbing & Gas</span>
-                    </div>
-                    <p class="text-gray-300 text-base">
-                        Providing quality plumbing and gas services to Burnley and surrounding areas for over 10 years.
-                    </p>
-                    <div class="flex space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="facebook" class="h-6 w-6"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="twitter" class="h-6 w-6"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="instagram" class="h-6 w-6"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                    <div class="md:grid md:grid-cols-2 md:gap-8">
-                        <div>
-                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
-                                Services
-                            </h3>
-                            <ul class="mt-4 space-y-4">
-                                <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
-                                        Central Heating
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
-                                        Plumbing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
-                                        Kitchens & Bathrooms
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
-                                        Tiling
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="mt-12 md:mt-0">
-                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
-                                Company
-                            </h3>
-                            <ul class="mt-4 space-y-4">
-                                <li>
-                                    <a href="#about" class="text-base text-gray-400 hover:text-white">
-                                        About
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#contact" class="text-base text-gray-400 hover:text-white">
-                                        Contact
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
-                                        Testimonials
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="md:grid md:grid-cols-2 md:gap-8">
-                        <div>
-                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
-                                Legal
-                            </h3>
-                            <ul class="mt-4 space-y-4">
-                                <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
-                                        Terms of Service
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-8">
-                <p class="text-base text-gray-400 text-center">
-                    &copy; 2023 MGS Plumbing and Gas. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Mobile menu toggle
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
-
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
+        // Initialize Vanta.js waves effect
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xcc9e3c,
+            shininess: 50.00,
+            waveHeight: 15.00,
+            waveSpeed: 0.75,
+            zoom: 0.75
         });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.mobile-menu a').forEach(item => {
-            item.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
-
+        
+        // Initialize Feather Icons
+        feather.replace();
+        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -514,9 +472,6 @@
                 });
             });
         });
-
-        // Initialize feather icons
-        feather.replace();
     </script>
 </body>
 </html>
